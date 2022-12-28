@@ -102,7 +102,10 @@ def train_MSCDA(cfg):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-s', '--scenario', help="scenario: '1' or '2'", default=1)
+    parser.add_argument('-t', '--task', help="tasks: '4/8/11'", default=4)
+    parser.add_argument('-f', '--fold', help="cross-validation fold: '1/2/3'", default=1)
     parser.add_argument('-b', "--batchsize", help="batch size", default=32)
+    parser.add_argument("-e", "--epoch", help="load epoch", default=100)
     parser.add_argument("-g", "--gpuid", help="run model on gpu id, e.g., '1,2'")
     args = parser.parse_args()
 
@@ -114,9 +117,12 @@ if __name__ == '__main__':
         from configs.Scenario2_config import cfg
     else:
         raise 'Undefined scenario.'
+    cfg.task = args.task
+    cfg.fold = args.fold
     cfg.gpu_ids = np.arange(0, len(args.gpuid.split(','))).tolist()
     cfg.batch_size = args.batchsize * len(cfg.gpu_ids)
     cfg.batch_size_val = cfg.batch_size
+    cfg.load_epoch = args.epoch
     train_MSCDA(cfg)
 
 

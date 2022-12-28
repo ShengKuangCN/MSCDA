@@ -14,7 +14,9 @@ cfg.ckpt_dir = 'E:\\Sheng\\2022_Breast_UDA\\ckpt\\BreastUDA\\'
 # Training data settings
 cfg.dataset = [cfg.DATA.DATASET_1.PATH, cfg.DATA.DATASET_2.PATH]
 cfg.modality = ['VISTA', 'DYN']
-cfg.dataset_name = ['TRT_T1W_n11', 'D2_T2W_n90_f1']
+cfg.task = 11
+cfg.fold = 1
+cfg.dataset_name = ['TRT_T1W_n{}'.format(cfg.task), 'D2_T2W_n90_f{}'.format(cfg.fold)]
 
 cfg.subject_id = [config.d1_sub[cfg.dataset_name[0]], config.d2_sub[cfg.dataset_name[1]]]
 cfg.subject_id_test = [[], config.d2_sub_test[cfg.dataset_name[1]]]
