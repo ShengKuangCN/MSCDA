@@ -93,4 +93,13 @@ Supervised | 2 | - | 96.0 | 93.0 | 96.2 | 96.5
 
 ## Citation
 
+    @misc{https://doi.org/10.48550/arxiv.2301.02554,
+      doi = {10.48550/ARXIV.2301.02554},
+      url = {https://arxiv.org/abs/2301.02554},
+      author = {Kuang, Sheng and Woodruff, Henry C. and Granzier, Renee and van Nijnatten, Thiemo J. A. and Lobbes, Marc B. I. and Smidt, Marjolein L. and Lambin, Philippe and Mehrkanoon, Siamak},
+      keywords = {Quantitative Methods (q-bio.QM), Machine Learning (cs.LG), FOS: Biological sciences, FOS: Biological sciences, FOS: Computer and information sciences, FOS: Computer and information sciences, I.2; I.5},
+      title = {MSCDA: Multi-level Semantic-guided Contrast Improves Unsupervised Domain Adaptation for Breast MRI Segmentation in Small Datasets},
+      publisher = {arXiv},
+      year = {2023},
+    }
 
