@@ -10,7 +10,7 @@
 
 ### Multi-level Semantic-Guided Contrast
 
-<img src="https://github.com/ShengKuangCN/MSCDA/blob/main/figures/multi_level_semantic_guided_contrast.png?raw=true" width="550" height="500" />
+<img src="https://github.com/ShengKuangCN/MSCDA/blob/main/figures/multi_level_semantic_guided_contrast.png?raw=true" />
 
 ## Prerequisites
 
@@ -87,7 +87,7 @@ Supervised | 2 | - | 96.0 | 93.0 | 96.2 | 96.5
 
 ### Segmentation comparison
 
-<img src="https://github.com/ShengKuangCN/MSCDA/blob/main/figures/seg.png?raw=true" width="550" height="500" />
+<img src="https://github.com/ShengKuangCN/MSCDA/blob/main/figures/seg.png?raw=true" />
 
 ### 
 
